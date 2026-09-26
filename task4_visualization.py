@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
-import numpy as np
+import os
 from task3_analysis import perform_analysis as pa
  
+os.makedirs("data/outputs", exist_ok=True) 
 df = pa("data/trends_cleaned.csv")
 
 #Bar chart for category count
@@ -12,7 +13,7 @@ plt.bar(bar1_x,bar1_y)
 plt.xlabel("Category")
 plt.ylabel("Count")
 plt.title("Number of stories per category")
-plt.savefig()
+plt.savefig("data/outputs/chart1.png")
 plt.show()
 
 # Average score by category
@@ -23,6 +24,7 @@ plt.bar(bar2_x,bar2_y)
 plt.xlabel("Category")
 plt.ylabel("Count")
 plt.title("Average story scores per category")
+plt.savefig("data/outputs/chart2.png")
 plt.show()
 
 # Average comments by category
@@ -33,6 +35,7 @@ plt.bar(bar3_x,bar3_y)
 plt.xlabel("Category")
 plt.ylabel("Count")
 plt.title("Average comments per category")
+plt.savefig("data/outputs/chart3.png")
 plt.show()
 
 # Score vs Comments 
@@ -43,6 +46,7 @@ plt.scatter(
 plt.title("Score vs Number of Comments")
 plt.xlabel("Score")
 plt.ylabel("Number of Comments")
+plt.savefig("data/outputs/chart4.png")
 plt.show()
 
 # Top 10 stories by score
@@ -57,6 +61,7 @@ plt.xlabel("Score")
 plt.ylabel("Story")
 plt.gca().invert_yaxis()
 plt.tight_layout()
+plt.savefig("data/outputs/chart5.png")
 plt.show()
 
 
