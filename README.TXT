@@ -1,1 +1,2 @@
-This is my first project.
+This is my first project. It's actually a mini project that was given as an assignment. After I completed doing this only I saw that there are specific guidelines on what and how to do on the learning management system but I didn't want to erase it as it's my first project so here I am with two version of the same project.
+The link for the other version is : https://github.com/Rkarthik2301/trendpulse-KARTHIK_R/tree/main
