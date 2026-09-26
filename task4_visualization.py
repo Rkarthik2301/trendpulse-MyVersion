@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from task3_analysis import perform_analysis as pa
-
+ 
 df = pa("data/trends_cleaned.csv")
 
 #Bar chart for category count
@@ -12,6 +12,7 @@ plt.bar(bar1_x,bar1_y)
 plt.xlabel("Category")
 plt.ylabel("Count")
 plt.title("Number of stories per category")
+plt.savefig()
 plt.show()
 
 # Average score by category
